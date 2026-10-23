@@ -23,7 +23,7 @@ export const site = {
     /** Descriptor shown beneath the brand mark. */
     descriptor: "Procurement & Contract Advisory",
     shortDescription:
-      "Advisory support in procurement, contract management, FIDIC-related contract administration, MoUs and documentation.",
+      "FIDIC contract administration, quantity surveying, contract management, claims, procurement, governance, commercial agreements and training.",
   },
 
   owner: {

@@ -46,8 +46,9 @@ export default function AboutPage() {
             <SectionHeading eyebrow="Overview" title="What we do" />
             <div className="mt-6 space-y-5 text-ink-muted">
               <p>
-                {brandName()} provides advisory support in procurement, contract management, FIDIC-related contract
-                administration, Memoranda of Understanding and business documentation.
+                {brandName()} provides FIDIC contract administration, quantity surveying and cost management, contract
+                management, claims and dispute avoidance, procurement and governance advisory, commercial agreements
+                support and professional training.
               </p>
               <p>
                 Our work sits alongside our clients&rsquo; own teams. We help them read contracts for what they require,

@@ -13,9 +13,9 @@ import { pageMeta } from "@/lib/seo";
 import type { IconName } from "@/types/content";
 
 export const metadata = pageMeta({
-  title: "Procurement, Contract Management & FIDIC Advisory",
+  title: "FIDIC, Contract Management, Quantity Surveying & Procurement Advisory",
   description:
-    "Professional advisory services in procurement, contract management, FIDIC-related contract administration, MoU drafting and documentation support. Book a consultation.",
+    "FIDIC contract administration, quantity surveying, contract management, claims, procurement, governance, commercial agreements and training. Book a consultation.",
   path: "/",
 });
 
@@ -45,14 +45,14 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-white">
         <div className="container grid items-center gap-14 pb-20 pt-14 md:pt-20 lg:grid-cols-[1.15fr_1fr] lg:gap-20 lg:pb-28">
           <div>
-            <p className="eyebrow reveal mb-6">Procurement · Contracts · FIDIC · MoUs</p>
+            <p className="eyebrow reveal mb-6">FIDIC · Contracts · Quantity Surveying · Procurement</p>
             <h1 className="text-[clamp(2.25rem,4.2vw,3.4rem)]">
               <span className="block">Clarity in Procurement.</span>
               <span className="block italic text-navy-700">Confidence in Contracts.</span>
             </h1>
             <p className="lede mt-7 max-w-xl">
-              Professional advisory services in procurement, contract management, FIDIC-related contract administration
-              and documentation support, for organisations that need their processes and paperwork to hold up.
+              FIDIC contract administration, contract management, quantity surveying and procurement advisory, for
+              organisations that need their contracts, costs and paperwork to hold up.
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Link href="/book" className="btn-primary">Book a Consultation</Link>
@@ -73,11 +73,11 @@ export default function HomePage() {
               id="services-heading"
               eyebrow="Services"
               title="Advisory support across the life of a contract"
-              lede="From preparing a procurement to closing out a contract, each engagement is scoped to your documents, your role and the rules that apply to you."
+              lede="From procurement and pricing to claims and close-out, each engagement is scoped to your documents, your role and the rules that apply to you."
             />
             <Link href="/services" className="link-arrow shrink-0">All services <Icon name="arrow" className="h-4 w-4" /></Link>
           </div>
-          <div className="mt-14 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-14 grid gap-px bg-line sm:grid-cols-2 xl:grid-cols-4">
             {services.map((s, i) => <ServiceCard key={s.slug} service={s} index={i} />)}
           </div>
         </div>

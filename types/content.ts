@@ -1,13 +1,18 @@
 export type IconName =
   | "procurement" | "contract" | "fidic" | "mou" | "notary" | "documents"
+  | "quantity" | "claims" | "governance" | "training"
   | "check" | "arrow" | "calendar" | "shield" | "clock" | "message" | "scale-free" | "layers";
 
 export type ServiceStatus = "published" | "draft";
 
+export type ServiceCategory =
+  | "fidic" | "quantity_surveying" | "contract" | "claims" | "procurement"
+  | "governance" | "documentation" | "training" | "notarial";
+
 export interface ServiceContent {
   slug: string;
   /** Used for booking/inquiry categories. */
-  category: "procurement" | "contract" | "fidic" | "mou" | "notarial" | "documentation";
+  category: ServiceCategory;
   title: string;
   shortTitle: string;
   icon: IconName;
@@ -25,6 +30,8 @@ export interface ServiceContent {
   prepare: string[];
   limitations: string[];
   cta: string;
+  /** Slugs of the services shown under "Related services". */
+  related: string[];
   seo: { title: string; description: string };
 }
 

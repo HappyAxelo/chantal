@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { allServices, getPublicService, publicServices } from "@/content/services";
+import { allServices, getPublicService, publicServices, relatedServices } from "@/content/services";
 import { PageHero } from "@/components/ui/PageHero";
 import { CtaBand } from "@/components/ui/CtaBand";
 import { DraftNote } from "@/components/ui/DraftNote";
@@ -45,7 +45,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   const s = resolve((await params).slug);
   if (!s) notFound();
 
-  const others = publicServices().filter((o) => o.slug !== s.slug).slice(0, 3);
+  const others = relatedServices(s);
   const bookHref = `/book?service=${s.category}`;
 
   return (
@@ -61,7 +61,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         <div className="container"><DraftNote>this service is a DRAFT: hidden from navigation, the sitemap and search engines until activated in content/services.ts and content/site.ts.</DraftNote></div>
       )}
       {!s.scopeConfirmed && (
-        <div className="container"><DraftNote>the scope items on this page are candidates drafted from the brief. The owner must confirm each one (then set scopeConfirmed: true).</DraftNote></div>
+        <div className="container"><DraftNote>the scope items follow the owner&rsquo;s comments on &ldquo;Our Services&rdquo;; the explanatory text under each is drafted. The owner must confirm it (then set scopeConfirmed: true).</DraftNote></div>
       )}
 
       <section className="section pb-0">

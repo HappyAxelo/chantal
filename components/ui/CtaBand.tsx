@@ -6,7 +6,7 @@ interface CtaLink {
 }
 
 export function CtaBand({
-  title = "Need clarity on a procurement or contract matter?",
+  title = "Need clarity on a contract, cost or procurement matter?",
   text,
   primary = { href: "/book", label: "Book a Consultation" },
   secondary = { href: "/contact", label: "Send an Inquiry" },

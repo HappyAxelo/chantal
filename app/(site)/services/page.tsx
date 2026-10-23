@@ -8,7 +8,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "Services",
   description:
-    "Procurement advisory, contract management, FIDIC contract administration, MoU drafting and review, and documentation support. Find the right service for your matter.",
+    "FIDIC contract administration, quantity surveying, contract management, claims and variations, procurement, policy and governance, commercial agreements and training.",
   path: "/services",
 });
 

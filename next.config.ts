@@ -15,6 +15,13 @@ const nextConfig: NextConfig = {
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },
+  async redirects() {
+    // Services merged into "Commercial Agreements & Documentation Support" (2026-10-23).
+    return [
+      { source: "/services/mou-drafting-review", destination: "/services/commercial-agreements-documentation", permanent: true },
+      { source: "/services/legal-documentation-support", destination: "/services/commercial-agreements-documentation", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

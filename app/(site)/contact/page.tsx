@@ -8,7 +8,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "Contact & Request a Quotation",
-  description: "Send an inquiry or request a quotation for procurement, contract management, FIDIC, MoU or documentation support.",
+  description: "Send an inquiry or request a quotation for FIDIC, contract management, quantity surveying, claims, procurement, commercial agreements or training support.",
   path: "/contact",
 });
 

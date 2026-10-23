@@ -1,7 +1,10 @@
 /** Form option lists shared by client forms and server validation (no zod here, to keep it out of client bundles). */
 
 export const inquiryCategories = [
-  "procurement", "contract", "fidic", "mou", "notarial", "documentation", "general",
+  "fidic", "quantity_surveying", "contract", "claims", "procurement", "governance",
+  "documentation", "training", "notarial", "general",
+  // Legacy: MoU work now sits under "documentation"; kept so older records stay valid.
+  "mou",
 ] as const;
 
 export const timeframes = ["urgent", "within_month", "one_to_three_months", "flexible", "unsure"] as const;

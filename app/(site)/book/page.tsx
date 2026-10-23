@@ -9,7 +9,7 @@ import { storeAvailable } from "@/lib/store";
 
 export const metadata = pageMeta({
   title: "Book a Consultation",
-  description: "Request an initial consultation on a procurement, contract management, FIDIC or MoU matter. Choose a time and we will confirm your appointment.",
+  description: "Request an initial consultation on a FIDIC, contract, quantity surveying, claims or procurement matter. Choose a time and we will confirm your appointment.",
   path: "/book",
 });
 

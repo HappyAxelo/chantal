@@ -12,12 +12,16 @@ export function esc(v: string): string {
 }
 
 const categoryLabel: Record<string, string> = {
-  procurement: "Procurement consultation",
+  fidic: "FIDIC contract consultation",
+  quantity_surveying: "Quantity surveying & cost consultation",
   contract: "Contract management consultation",
-  fidic: "FIDIC-related consultation",
-  mou: "MoU consultation",
+  claims: "Claims & variations consultation",
+  procurement: "Procurement consultation",
+  governance: "Policy & governance consultation",
+  documentation: "Commercial agreements & documentation consultation",
+  training: "Training inquiry",
   notarial: "Notarial appointment",
-  documentation: "Documentation support consultation",
+  mou: "MoU consultation",
   general: "General consultation",
 };
 export const labelForCategory = (c: string) => categoryLabel[c] ?? c;
