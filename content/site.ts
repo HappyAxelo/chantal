@@ -41,7 +41,7 @@ export const site = {
     philosophy: null as string | null,
     memberships: [] as string[],
     /** Path under /public once an approved portrait exists, e.g. "/images/chantal-nishimwe.jpg". */
-    portrait: null as string | null,
+    portrait: "/images/chantal-nishimwe.jpg" as string | null,
   },
 
   location: {
